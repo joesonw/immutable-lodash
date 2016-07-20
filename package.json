@@ -7,7 +7,7 @@
     "test": "test"
   },
   "dependencies": {
-    "immutable": "^3.8.1",
+    "immutable": "^3.8.1"
   },
   "devDependencies": {
     "babel-core": "^6.11.4",
@@ -24,6 +24,9 @@
   "scripts": {
     "test": "gulp test",
     "install": "gulp webpack"
+  },
+  "engines": {
+    "node": ">=4.0.0"
   },
   "repository": {
     "type": "git",
