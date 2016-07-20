@@ -2,14 +2,17 @@
 * @Author: Qiaosen Huang
 * @Date:   2016-07-20 15:41:35
 * @Last Modified by:   Qiaosen Huang
-* @Last Modified time: 2016-07-20 17:02:04
+* @Last Modified time: 2016-07-20 17:37:59
 */
 
 'use strict';
 const List = require('immutable').List;
+const falsey = require('../falsey');
 
 module.exports = function(array, size, iter) {
-    size = size || 0;
+    if (~falsey.indexOf(size)) {
+        size = 0;
+    }
     size = parseInt(size);
     if (iter) {
         size = 0;
